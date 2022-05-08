@@ -1,0 +1,43 @@
+.review {
+    transform: translate(-50%, -50%);
+}
+.review h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 4px;
+    background-color: rgb(13, 141, 141);
+}
+.review .review-box {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.review .review-box .review-img {
+    width: 150px;
+    height: 150px;
+}
+.review .review-box .review-img img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .review-box .review-content .job {
+    color: rgb(13, 141, 141);
+    font-weight: 700;
+}
+.review .review-box .review-content .transition-icons .icon {
+    color: rgb(13, 141, 141);
+    font-size: 1.5rem;
+    margin: 0 10px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.review .review-box .review-content .transition-icons .icon:hover {
+    transform: scale(1.1);
+}
+.review .review-box .review-content .random-review {
+    background-color: rgb(16, 165, 165);
+}
